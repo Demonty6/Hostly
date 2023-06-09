@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+
+
+:root {
+    --primary-color: rgb(249, 202, 16);
+    --primary-2: rgba(244, 196, 5, 0.797);
+}
+
+body { overflow-x: hidden; font-family:  'Poppins', sans-serif; }
+
+
+.btn_border {
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 8px 18px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn_border:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.btn_fill {
+    color: white;
+    background-color: var(--primary-color) !important;
+    padding: 8px 18px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn_fill:hover {
+    color: white;
+}
+
+
+/**********   Bar Menu     *************/ 
+.navbar {
+    background-color: white;
+    border-bottom: 2px solid rgb(98, 96, 96);
+    z-index: 1;
+}
+
+.offcanvas {
+    width: 220px !important;
+}
+
+.btn_close {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    border-bottom: 2px solid white;
+}
+
+.nav-item {
+    width: 100px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:hover, 
+.navbar-toggler:focus, 
+.btn-close:hover,
+.btn-close:focus {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav__btn {
+    background-color: var(--primary-color);
+    border-radius: 28px;
+    transition: all 0.3s ease-in-out;
+    max-width: 125px;
+}
+
+.nav__btn:hover {
+   transform: scale(1.1);
+}
+
+@media (min-width: 990px) {
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .offcanvas-start {
+        width: 200px !important;
+    }
+
+    .nav-link {
+        color: rgb(20, 18, 18) !important;
+        border-bottom: none;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+     .nav-item
+     {
+        width: 120px !important;
+        text-align: center;
+    }
+
+    .nav__btn {
+        padding: 5px 12px !important;
+        font-size: 18px;
+    }
+
+  
+}
+
+/**********   Hero Section     *************/ 
+
+.hero {
+    background-image: linear-gradient(252deg, rgba(148, 130, 73, 0.5) 0%, rgba(9, 11, 14, 1) 100%), 
+    url("https://images.pexels.com/photos/8459396/pexels-photo-8459396.jpeg?cs=srgb&dl=pexels-los-muertos-crew-8459396.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center end;
+    height: 80vh;
+}
+
+.hero__context h1 {
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+.hero__context p {
+    margin: 30px 0px;
+}
+
+.hero__btn a {
+    color: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    padding: 8px 19px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero__btn a:hover {
+    background-color: var(--primary-color);
+}
+
+.hero_join_btn {
+    background-color: var(--primary-color);
+}
+
+@media (min-width: 990px) {
+    .hero { background-position: center center;}
+    .hero__context h1 {
+        font-size: 40px;
+    }
+
+    .hero__context p {
+        font-size: 19px;
+    }
+    .hero__btn, .hero_join_btn {
+        font-size: 19px;
+        
+    }
+}
+
+@media (min-width: 1326px) {
+    .hero { background-position: center center;}
+    .hero {
+        height: 89vh;
+    }
+
+    .hero__context h1 {
+       font-size: 70px;
+    }
+
+    .hero__context p {
+        font-size: 23px;
+    }
+    .hero__btn, .hero_join_btn {
+        font-size: 19px;
+        
+    }
+}
+
+/**********   Service Section     *************/ 
+
+.services {
+    padding: 45px 0px;
+}
+
+.services h2 {
+    color: var(--primary-color);
+}
+
+.services p {
+    text-align: center;
+}
+
+.service_title {
+    color: black;
+    font-size: 19px;
+    transition: all 0.3s ease-in-out;
+}
+
+.service_title:hover {
+    color: var(--primary-color);
+}
+
+.service_1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 230px;
+    width: 230px;
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 4px 24px -4px rgba(143, 143, 148, 1);
+    -moz-box-shadow: 2px 4px 24px -4px rgba(143, 143, 148, 1);
+    box-shadow: 2px 4px 24px -4px rgba(143, 143, 148, 1);
+}
+
+.service_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.service_animation {
+    animation: arrow 0.7s ease-in-out 2s infinite alternate forwards;
+}
+
+@keyframes arrow {
+   0% {
+    transform: translateX(-7px);
+   }
+   100% {
+    transform: translateX(7px);
+
+   }
+}
+
+@media (min-width: 1326px) {
+    .services h2 {
+        font-size: 50px;
+    }
+    
+    .service_up {
+        transform: scale(1.1);
+    }
+
+    .services p {
+        font-size: 20px;
+    }
+    .services {
+        padding: 70px 30px !important;
+    }
+}
+
+/**********   About Section     *************/ 
+
+.about__us {
+    padding: 50px 0px;
+}
+
+.about_content {
+    background-color: black;
+}
+
+.about__us h2 {
+    color: var(--primary-color);
+}
+
+.about__img {
+    background-image: url("https://www.mtievents.com/wp-content/uploads/2018/08/customer-appreciation-event.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+
+@media (min-width: 1326px) {
+    .about__us {
+        padding: 0px 15px;
+    }
+    .about__us h2 {
+        font-size: 50px;
+        text-align: left !important;
+    }
+    
+    .about__us p {
+      font-size: 19px;
+    }
+
+    .btn_border {
+        font-size: 19px;
+    }
+}
+
+/**********   How Works Section     *************/ 
+
+.how_work h2 {
+    color: var(--primary-color);
+}
+
+.hw__list img{
+    margin: 18px 0px;
+}
+
+.hw__context h5 {
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.hw__list img {
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+}
+
+@media (min-width: 990px) {
+    .how_work {
+        padding: 45px 20px;
+    }
+
+    .how_work h2 {
+        font-size: 50px;
+    }
+    .how_work p { 
+        font-size: 19px;
+    }
+
+    .hw__context h5 {
+        font-size: 23px;
+    }
+
+    .btn_fill:hover {
+        transform: scale(1.1);
+    }
+
+    .btn_fill{
+        font-size: 19px;
+    }
+}
+
+/**********   TESTIMONIAL Section     *************/
+
+.testimonial {
+    background-color: black;
+    color: white
+}
+
+.testimonial h2 {
+    color: var(--primary-color);
+}
+
+.client {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    border: 4px solid var(--primary-color);
+}
+
+.client img {   
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.star__icon {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.feedback {
+    -webkit-box-shadow: -2px 7px 24px -4px rgba(130, 97, 16, 1);
+    -moz-box-shadow: -2px 7px 24px -4px rgba(130, 97, 16, 1);
+    box-shadow: -2px 7px 24px -4px rgba(130, 97, 16, 1);
+    max-width: 800px;
+    border-radius: 25px;
+}
+
+@media (min-width: 990px) {
+    .testimonial h2 {
+        font-size: 50px;
+    }
+}
+/**********   Contact Section     *************/
+
+.contact__context h2 {
+    color: var(--primary-color);
+}
+
+.contact__image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contact__section label {
+    color: var(--primary-color);
+}
+
+.contact__section input {
+    outline: none !important;
+    border: none;
+    background-color: lightgray;
+    padding: 8px 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.contact__section textarea {
+    outline: none !important;
+    border: none;
+    background-color: lightgray;
+    resize: none;
+    padding: 8px 6px;
+    font-family: 'Poppins', sans-serif;
+    margin: 9px 0px;
+}
+
+@media (min-width:1015px) {
+    .contact__context p {
+        width: 50%;
+    }
+}
+
+/**********   Selling Section     *************/
+
+.selling {
+    padding: 60px 0px;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("https://res.cloudinary.com/braid/image/upload/w_2048,h_997,c_crop,f_auto/w_1400,c_scale/v1623447076/braidcms/0c0739f40cde4a36535eb5ab24a00d51.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.selling h2 {
+    color: var(--primary-color);
+}
+
+.selling p {
+    color: white;
+    font-style: italic;
+}
+
+@media (min-width: 990px) {
+    .selling h2 {
+        font-size: 35px;
+    }
+    .selling p {
+        font-size: 19px;
+    }
+
+    .selling_p {
+        width: 75%;
+    }
+
+    .selling {
+        padding: 60px 40px;
+    }
+}
+
+@media (min-width:1015px)  {
+    .selling h2 {
+        font-size: 50px;
+    }
+}
+
+/**********   Footer Section     *************/ 
+
+.footer__section {
+    background-color: black;
+}
+
+.footer__section h2, h5 {
+    color: var(--primary-color);
+}
+
+.footer__brows a,
+.footer_aditional a {
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer__brows a:hover,
+.footer_aditional a:hover {
+    color: var(--primary-color);
+}
+
+.footer__follow .icon {
+    color: white;
+    transition: all 0.3s ease-in-out;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.footer__follow .icon:hover {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.footer_btn {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+
+.footer__input input {
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.closing__container p {
+    color: rgb(91, 87, 87);
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        width: 85%;
+    }
+
+    .footer__brows, .footer__follow {
+        padding-left: 6.2rem !important;
+    }
+}
+
+@media (min-width: 990px) {
+    .footer__brows {
+        padding-left: 35px !important;
+    }
+
+    .footer__follow {
+        padding-left: 0px !important;
+    }
+
+    .footer-container {
+        width: 88%;
+    }
+
+    .footer__follow .icon {
+        font-size: 2rem;
+    }
+}

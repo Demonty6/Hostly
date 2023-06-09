@@ -1,0 +1,415 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+
+
+
+/* GENERAL STYLE*/
+
+:root {
+    --primary-color: rgb(249, 202, 16);
+}
+
+.btn_border {
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 8px 18px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn_border:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.btn_fill {
+    color: white;
+    background-color: var(--primary-color) !important;
+    padding: 8px 18px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn_fill:hover {
+    transform: scale(1.2);
+}
+
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins';
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+/**********   Bar Menu     *************/ 
+
+.navbar {
+    background-color: white;
+    border-bottom: 2px solid rgb(98, 96, 96);
+    z-index: 1;
+}
+
+.offcanvas {
+    width: 220px !important;
+}
+
+.btn_close {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    border-bottom: 2px solid white;
+}
+
+.nav-item {
+    width: 100px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:hover, 
+.navbar-toggler:focus, 
+.btn-close:hover,
+.btn-close:focus {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav__btn {
+    background-color: var(--primary-color);
+    border-radius: 28px;
+    transition: all 0.3s ease-in-out;
+    max-width: 125px;
+}
+
+.nav__btn:hover {
+   transform: scale(1.1);
+}
+
+@media (min-width: 990px) {
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .offcanvas-start {
+        width: 200px !important;
+    }
+
+    .nav-link {
+        color: rgb(20, 18, 18) !important;
+        border-bottom: none;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+     .nav-item
+     {
+        width: 120px !important;
+        text-align: center;
+    }
+
+    .nav__btn {
+        padding: 5px 12px !important;
+        font-size: 18px;
+    }
+
+  
+}
+
+/**********   Hero Section     *************/ 
+
+.hero {
+    height: 79vh;   
+    background-image: linear-gradient(252deg, rgba(148, 130, 73, 0.5) 0%, rgba(9, 11, 14, 1) 100%), 
+    url("https://startkiwi.com/wp-content/uploads/2019/06/shutterstock_142501879-Large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+@media (min-width: 900px) {
+    .hero h1 
+{
+    font-size: 75px;
+    color: var(--primary-color);
+}
+
+.hero p {
+    font-size: 19px;
+}
+}
+
+.about , .mission, .cta, .values {
+    padding: 45px 0px;
+}
+
+
+/**********   About Section     *************/ 
+
+.about_image {
+    background-color: lightgray;
+    height: 250px;
+    width: 300px;
+}
+.about_image_2 {
+    background-color: lightgray;
+    height: 250px;
+    width: 100%;
+}
+
+.about_btn {
+    background-color: var(--primary-color);
+    padding: 12px 14px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out !important;
+    color: white;
+}
+
+@media (min-width: 900px) {
+    .about_image {
+        background-color: lightgray;
+        height: 250px;
+        width: 330px;
+    }
+
+    .about h2 {
+        font-size: 50px;
+    }
+
+    .about p {
+        font-size: 18px;
+    }
+}
+
+
+/**********   Values Section     *************/ 
+
+.value_title {
+    color: var(--primary-color);
+}
+
+.value_card {
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.value_card:hover {
+    background-color: var(--primary-color);
+}
+
+.value_card:hover .value_title {
+    color: white !important;
+}
+
+@media (min-width: 900px) {
+    .values h2 {
+        font-size: 50px;
+    }
+}
+
+/**********   Member Section     *************/ 
+
+.members {
+    padding: 75px 0px;
+    background-color: rgb(0, 0, 0);
+}
+
+.member__image img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: white;
+}
+
+.member__image__2 img{
+    width: 70px;
+    height: 70px;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+.member_tag {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 9px;
+    border-radius: 15px;
+}
+
+@media (min-width: 900px) {
+    .members h2 {
+        font-size: 50px;
+    }
+    .member_p {
+        font-size: 18px;
+    }
+
+    .member__image p {
+        font-size: 19px;
+    }
+
+    .member__image img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/**********   Foundes Section     *************/ 
+
+.founder_photo {
+   width: 100%;
+   height: 100%;
+    background-color: lightgray;
+    background-image: url("https://www.psypost.org/wp-content/uploads/2019/04/happy-smiling-attractive-businesswoman.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+@media (min-width: 1300px) {
+    .founder_container {
+        padding: 0px 30px !important;
+    }
+
+    .founder h2 {
+        font-size: 50px;
+    }
+
+    .founder p {
+        font-size: 18px;
+    }
+}
+
+/**********   Selling Section     *************/
+
+.selling {
+    padding: 60px 0px;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("https://res.cloudinary.com/braid/image/upload/w_2048,h_997,c_crop,f_auto/w_1400,c_scale/v1623447076/braidcms/0c0739f40cde4a36535eb5ab24a00d51.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.selling h2 {
+    color: var(--primary-color);
+}
+
+.selling p {
+    color: white;
+    font-style: italic;
+}
+
+@media (min-width: 990px) {
+    .selling h2 {
+        font-size: 35px;
+    }
+    .selling p {
+        font-size: 19px;
+    }
+
+    .selling_p {
+        width: 75%;
+    }
+
+    .selling {
+        padding: 60px 40px;
+    }
+}
+
+/**********   Footer Section     *************/ 
+
+.footer__section {
+    background-color: black;
+}
+
+.footer__section h2, h5 {
+    color: var(--primary-color);
+}
+
+.footer__brows a,
+.footer_aditional a {
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer__brows a:hover,
+.footer_aditional a:hover {
+    color: var(--primary-color);
+}
+
+.footer__follow .icon {
+    color: white;
+    transition: all 0.3s ease-in-out;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.footer__follow .icon:hover {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.footer_btn {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+
+.footer__input input {
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.closing__container p {
+    color: rgb(91, 87, 87);
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        width: 85%;
+    }
+
+    .footer__brows, .footer__follow {
+        padding-left: 6.2rem !important;
+    }
+}
+
+@media (min-width: 990px) {
+    .footer__brows {
+        padding-left: 35px !important;
+    }
+
+    .footer__follow {
+        padding-left: 0px !important;
+    }
+
+    .footer-container {
+        width: 88%;
+    }
+
+    .footer__follow .icon {
+        font-size: 2rem;
+    }
+}

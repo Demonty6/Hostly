@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+<link rel="stylesheet" href="sweetalert2.min.css">
+  <!--- CSS -->
+  <link rel="stylesheet" href="Style/services.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/f95bfb3b84.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg d-flex py-lg-3 position-sticky top-0">
+    <div class="container-fluid p-0 mx-3 mx-lg-5">
+      <a class="navbar-brand fw-bold m-0" href="#">HOSTLY</a>
+      <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="navbar-brand fw-bold" id="offcanvasExampleLabel">HOSTLY</h5>
+          <i class="fa-solid fa-xmark btn_close" name="close" type="button" data-bs-dismiss="offcanvas"
+            aria-label="Close"></i>
+        </div>
+        <ul class="navbar-nav  ms-lg-auto d-lg-flex align-items-center d-block">
+          <li class="nav-item mb-3 ps-3 mb-lg-0 ps-lg-0"><a class="nav-link p-0 text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mb-3 ps-3 mb-lg-0 ps-lg-0"><a class="nav-link p-0 text-white" href="about.html">About</a>
+          </li>
+          <li class="nav-item mb-3 ps-3 mb-lg-0 ps-lg-0"><a class="nav-link p-0 text-white"
+              href="services.html">Services</a></li>
+          <li class="nav-item mb-4 ps-3 mb-lg-0 ps-lg-0"><a class="nav-link p-0 text-white" href="#">Contact</a></li>
+          <a class="fw-bold text-white text-decoration-none  nav__btn text-center ms-3 py-2 px-4 py-lg-0 px-lg-0"
+            href="service.html">Book Staff</a>
+        </ul>
+      </div>
+  </nav>
+  <section class="hero position-relative border-none">
+    <div class="hero__content row  m-0 h-100 ">
+      <div class="col-sm-6 ps-sm-5 d-flex align-items-center pt-5">
+        <div class=" hero__context py-sm-3">
+          <h1 class="fw-bold">Services</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services px-4">
+    <h2 class="text-center fw-bold py-4">Our services</h2>
+    <p class="text-center lh-lg service_p pb-md-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, eveniet totam.
+      Eum, sapiente ducimus magni, architecto rem ex incidunt enim dolores, dolor aliquam vel commodi sit hic eius
+      veniam. Recusandae adipisci quibusdam aut voluptatem sit maxime voluptates inventore quisquam..</p>
+    <div class="row align-items-center">
+      <div class="col-sm-6 col-md-12 col-lg-6  text-center text-sm-end mt-3">
+        <img src="https://www.bls.gov/ooh/images/2669.jpg" alt="" class="w-100 img-fluid">
+      </div>
+      <div class="col-sm-6 col-md-12 col-lg-6  py-4">
+        <h4 class="fw-bold text-center text-sm-start py-3">Server Services</h4>
+        <p class="lh-lg">
+          Our servers are trained professionals who are experienced in providing top-notch customer service. They are
+          knowledgeable about menu items, wine and cocktail pairings, and can handle any special requests or dietary
+          restrictions. They will ensure that your guests feel welcome and taken care of throughout the event. Our
+          servers can assist with everything from passing hors d'oeuvres to clearing tables and managing the flow of the
+          event.
+        </p>
+      </div>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-sm-6 col-md-12 col-lg-6  text-center text-sm-end mt-3 order-lg-2">
+        <img src="https://mybartender.com/wp-content/uploads/2023/01/What-is-the-Difference-Between-a-Bartender-and-a-Mixologist.jpg" alt="" class="w-100 img-fluid">
+      </div>
+      <div class="col-sm-6 col-md-12 col-lg-6  py-4">
+        <h4 class="fw-bold text-center text-sm-start py-3">Bartender Services</h4>
+        <p class="lh-lg">
+          Our bartenders are skilled mixologists who can create delicious cocktails and drinks that will impress your
+          guests. They are knowledgeable about different types of alcohol and can provide recommendations for drinks
+          that pair well with the menu. They are also experts in managing the bar area and ensuring that drinks are
+          served quickly and efficiently. Our bartenders are licensed and insured, so you can be confident that you are
+          getting a qualified professional.
+        </p>
+      </div>
+    </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-sm-6 col-md-12 col-lg-6 text-center text-sm-end mt-3">
+        <img src="https://www.hospitalityjobsuk.com/images/546/default/what-is-a-catering-assistant-_202001271232495.png" alt="" class="w-100 img-fluid object-fit-cover">
+      </div>
+      <div class="col-sm-6 col-md-12 col-lg-6 py-4">
+        <h4 class="fw-bold text-center text-sm-start py-3">Kitchen Assistant</h4>
+        <p class="lh-lg">
+          Our kitchen assistants are experienced in all aspects of food preparation and can help keep your kitchen
+          running smoothly. They can assist with tasks such as food prep, cooking, plating, and cleaning up. They are
+          knowledgeable about food safety and sanitation, and can ensure that your kitchen meets all health and safety
+          standards. Our kitchen assistants are trained to work quickly and efficiently, so you can focus on other
+          aspects of your event or business.
+        </p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <!--
+  
+     
+
+
+      <div class="col-sm-4">
+        <img
+          src=""
+          alt="" class="rounded img-fluid">
+        <h4> Services:</h4>
+        <p>
+          
+        </p>
+      </div>
+-->
+
+
+
+  <section class="selling">
+    <div class="row m-0 p-0">
+      <h2 class="fw-bold text-center">Let us show you how it's done!</h2>
+      <div class="col-sm-12 d-flex justify-content-center align-items-center py-4">
+        <p class="lh-lg text-center selling_p">
+          Our event hosting services have a 98% satisfaction rate, and we're dedicated to making your event stress-free
+          and unforgettable. Let us handle the details so you can relax and enjoy your special day!
+        </p>
+      </div>
+      <div class="col-sm-12 d-flex justify-content-center align-items-center">
+        <a href="" class="sale_icon text-decoration-none fw-bold"><i class="fa-solid fa-arrow-down-long"></i></a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="book-services py-5 px-2">
+    <h2 class="text-center fw-bold">Book Staff</h2>
+    <p class="text-center py-3 book_p lh-lg">
+      Hire trusted and trained professionals for everything on your event related to-do list. Fill out the following
+      form and we will connect you with reliable staff who can help with high-quality event execution services. Let them
+      do the work so you can focus on your guests and enjoy your event.
+    </p>
+
+    <form action="https://formsubmit.co/mr.lopezramos93@gmail.com" method="POST">
+      <div class="contact_event_container row m-0 p-0 ">
+
+        <div class="col-sm-6">
+          <section class="label_container d-flex flex-column">
+            <div class="contact_boxes  d-flex flex-column">
+              <label>Full Name</label>
+              <input type="text" name="name" required id="name">
+            </div>
+
+            <div class="contact_boxes d-flex flex-column">
+              <label>Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="contact_boxes d-flex flex-column">
+              <label>Phone Number</label>
+              <input type="text" name="number" id="number" required>
+            </div>
+
+            <div class="contact_boxes d-flex flex-column">
+              <label>Event Date</label>
+              <input type="date" required>
+            </div>
+
+            <div class="contact_boxes d-flex flex-column">
+              <label>Event Start Time</label>
+              <input type="date" required>
+            </div>
+
+            <div class="contact_boxes d-flex flex-column">
+              <label>Event End Time</label>
+              <input type="date" required>
+            </div>
+
+
+
+          </section>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="contact_boxes  d-flex flex-column">
+            <label>What type of staff are you looking to hire?</label>
+            <div class="check_container">
+              <div class="check_option d-flex ">
+                <input type="checkbox" required>
+                <p class="m-0 ps-3">Server</p>
+              </div>
+              <div class="check_option d-flex py-3">
+                <input type="checkbox" required>
+                <p class="m-0 ps-3">Bartender</p>
+              </div>
+              <div class="check_option d-flex">
+                <input type="checkbox" required>
+                <p class="m-0 ps-3">Kitchen Assistent</p>
+              </div>
+              <label>Select all tasks you will need help with.</label>
+              <div class="services_container">
+                <div class="container_option1">
+                  <div class="option1 d-flex align-items-center">
+                    <input type="checkbox" name="" id="" required>
+                    <p class="m-0 ms-2">Table setup and service</p>
+                  </div>
+                  <div class="option1 d-flex align-items-center">
+                    <input type="checkbox" name="" id="" required>
+                    <p class="m-0 ms-2 py-2">Bar set up, preparation and service</p>
+                  </div>
+                  <div class="option1 d-flex align-items-center">
+                    <input type="checkbox" name="" id="" required>
+                    <p class="m-0 ms-2">Buffet table preparation</p>
+                  </div>
+                </div>
+                <div class="container_option1">
+                  <div class="option1 d-flex align-items-center">
+                    <input type="checkbox" name="" id="" required>
+                    <p class="m-0 ms-2 pt-2">Kitchen assistance</p>
+                  </div>
+                  <div class="option1 d-flex align-items-center">
+                    <input type="checkbox" name="" id="" required>
+                    <p class="m-0 ms-2 py-2">Post-event clean up</p>
+                  </div>
+                  <div class="option1 d-flex align-items-center">
+                    <input type="checkbox" name="" id="">
+                    <p class="m-0 ms-2">Appetizer set up and distribution</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="container_one">
+            <article>
+              <label>How many servers you would like to hire.</label> <br>
+              <select id="cars" name="cars" required>
+                <option value="Server1">1 Server & Bartender</option>
+                <option value="Server2">2 Servers & Bartenders</option>
+                <option value="Server">1 Server</option>
+                <option value="Server">2 Servers</option>
+                <option value="Bartender">1 Bartender</option>
+                <option value="Bartenders">2 Bartenders</option>
+              </select>
+            </article>
+
+            <article>
+              <label>What's the purpose of the event?</label> <br>
+              <select id="cars" name="cars" required>
+                <option value="Dinner">Dinner Party</option>
+                <option value="Birthday">Birthday Party</option>
+                <option value="Kid">Kid's Party</option>
+                <option value="Holiday">Holiday Party</option>
+                <option value="Religious">Religious Celebration</option>
+                <option value="company">Company Event</option>
+                <option value="other">Other</option>
+              </select>
+            </article>
+
+            <div class="container_two">
+              <article>
+                <label>Provide uniform Preference.</label> <br>
+                <select id="cars" name="cars" required>
+                  <option value="option1">Black shirt, Black pants</option>
+                  <option value="option2">White shirt, White pants</option>
+                </select>
+              </article>
+              <article>
+                <label>Number of guests expected?</label> <br>
+                <select id="cars" name="cars" required>
+                  <option value="guest1">2 - 12 guestes</option>
+                  <option value="guest2">13 - 24</option>
+                  <option value="guest3">25 - 39</option>
+                  <option value="guest4">40+</option>
+                </select>
+              </article>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="check_boxes">
+            <label>Event Location (address)</label>
+            <input type="text" placeholder="5523 Emerald Coast Parkway, Miami, FL" class="w-100 mb-3">
+            <textarea name="" id="" cols="30" rows="10"
+              placeholder="Please provide any other information or special requests our team should know (e.g. Language preference, request to rebook preferred professional)."
+              class="w-100"></textarea>
+          </div>
+        </div>
+        <p class="py-3 terms px-md-4 px-lg-5 px-xl-5 mt-4">
+          YOU WILL RECEIVE A QUOTE FROM OUR TEAM WITHIN 24 HOURS BASED ON THE SELECTED DATE, TYPE OF SERVICE, AND
+          ESTIMATED NUMBER OF HOURS. **PLEASE CHECK YOUR SPAM FOLDER IN CASE THE EMAIL IS NOT ABLE TO GET THROUGH TO
+          YOUR INBOX. IF YOU DO NOT RECEIVE A CONFIRMATION EMAIL WITHIN 24-48 HOURS, PLEASE CONTACT US.** YOU CAN THEN
+          CHOOSE TO CONFIRM YOUR RESERVATION. BY SUBMITTING YOUR INFORMATION, YOU'RE AGREEING TO THE TERMS & CONDITIONS.
+        </p> <br>
+        <input type="submit" value="Send Request" class="btn_fill mx-auto my-3 p-3 btn_services" onclick="sent()">
+
+
+      </div>
+
+
+
+
+
+      <!-- 
+       
+
+        
+
+        
+        -->
+    </form>
+  </section>
+
+  <footer class="footer__section d-flex justify-content-center align-items-center py-5">
+    <div class="row m-0 p-0 footer-container">
+      <div class="col-sm-3 col-md-6 col-lg-3 footer__logo px-md-5 p-0 px-4 px-lg-0">
+        <h2 class="pe-5">Hostly</h2>
+        <p class="text-white">
+          Be the “host with the most” and actually have fun at your event. Let us do the work so you can enjoy like
+          you’re one of the guests.
+        </p>
+      </div>
+
+      <div class="col-sm-3 col-md-6 col-lg-3 footer__brows p-0 px-4 ps-lg-5 pe-lg-0">
+        <h5>Navegation</h5>
+        <ul class="p-0">
+          <li class="list-unstyled pt-2">
+            <a href="home.html" class="text-decoration-none">Home</a>
+          </li>
+          <li class="list-unstyled pt-2">
+            <a href="about.html" class="text-decoration-none">About us</a>
+          </li>
+          <li class="list-unstyled pt-2">
+            <a href="contact.html" class="text-decoration-none">Contact</a>
+          </li>
+          <li class="list-unstyled pt-2">
+            <a href="services.html" class="text-decoration-none">Book Service</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-sm-3 col-md-6 col-lg-3 px-md-5  px-lg-0 footer_aditional p-0 px-4 mt-md-4 mt-lg-0">
+        <h5 class="pb-4">Helpfull Links</h5>
+        <ul class="p-0">
+          <li class="list-unstyled pt-2">
+            <a href="faq.html" class="text-decoration-none">FAQ</a>
+          </li>
+          <li class="list-unstyled pt-2">
+            <a href="terms.html" class="text-decoration-none">Terms & Condition</a>
+          </li>
+          <li class="list-unstyled pt-2">
+            <a href="join.html" class="text-decoration-none">Join us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-sm-3 col-md-6 col-lg-3 footer__follow p-0 px-4 px-lg-0 mt-md-4 mt-lg-0">
+        <h5>Follow us</h5>
+        <div class="footer__icon text-white pt-sm-3">
+          <a href="#" class="text-decoration-none">
+            <i class="fa-brands fa-facebook icon"></i>
+          </a>
+          <a href="https://www.instagram.com/hostly.world/" class="text-decoration-none">
+            <i class="fa-brands fa-instagram icon"></i>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <i class="fa-brands fa-twitter icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <hr class="text-white mt-5">
+      <div class="closing__container d-flex justify-content-between px-sm-5">
+        <p>CopyRight &copy; Carlos Lopez</p>
+        <p>Pravacy & Policy</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
